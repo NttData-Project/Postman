@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "43030358-5359-414e-b209-186debd898a3",
+		"name": "User enterprise source",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8092/enterprise",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"enterprise"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Henrry\",\r\n    \"lastName\": \"Avila\",\r\n    \"email\": \"henry122@gmail.com\",\r\n    \"number\": \"992708781\",\r\n    \"dni\": \"73938661\",\r\n    \"ruc\": \"12345678912\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8092/enterprise/624f252e995453578b39901b",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"enterprise",
+						"624f252e995453578b39901b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8092/enterprise/624f252e995453578b39901b",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"enterprise",
+						"624f252e995453578b39901b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8092/enterprise/624f25d42c0814347e4c6b44",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"enterprise",
+						"624f25d42c0814347e4c6b44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save saving account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Hector Marco\",\r\n        \"lastName\": \"Rodriguez\",\r\n        \"email\": \"why22@gmail.com\",\r\n        \"number\": \"992767781\",\r\n        \"dni\": \"81739816\",\r\n        \"savingAccount\":{\r\n            \"balance\": 290,\r\n            \"currency\": \"SOLES\",\r\n            \"accountNumber\": \"2234123412342124\",\r\n            \"cvc\": 713\r\n        }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8092/enterprise/saveSavingAccount",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"enterprise",
+						"saveSavingAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save current account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Hector Marco\",\r\n        \"lastName\": \"Rodriguez\",\r\n        \"email\": \"why22@gmail.com\",\r\n        \"number\": \"992767781\",\r\n        \"dni\": \"81739816\",\r\n        \"currentAccount\":{\r\n            \"balance\": 290,\r\n            \"currency\": \"SOLES\",\r\n            \"accountNumber\": \"2234123412342124\",\r\n            \"cvc\": 713\r\n        }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8092/enterprise/saveCurrentAccount/NORMAL",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"enterprise",
+						"saveCurrentAccount",
+						"NORMAL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save credit account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Hector Marco\",\r\n        \"lastName\": \"Rodriguez\",\r\n        \"email\": \"why22@gmail.com\",\r\n        \"number\": \"992767781\",\r\n        \"dni\": \"81739816\",\r\n        \"creditAccount\":{\r\n            \"balance\": 290,\r\n            \"currency\": \"SOLES\",\r\n            \"accountNumber\": \"2234123412342124\",\r\n            \"cvc\": 713\r\n        }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8092/enterprise/saveCreditAccount",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"enterprise",
+						"saveCreditAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

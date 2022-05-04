@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "033d1436-7b22-4240-b680-6bb5606a7168",
+		"name": "Movement source",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8072/movement",
+					"host": [
+						"localhost"
+					],
+					"port": "8072",
+					"path": [
+						"movement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find producto - balance por periodo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8072/movement/idCreditAccount/73938616",
+					"host": [
+						"localhost"
+					],
+					"port": "8072",
+					"path": [
+						"movement",
+						"idCreditAccount",
+						"73938616"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Pago de comida\",\r\n\r\n    \"amount\": 550,\r\n    \"identifier\": \"6266bf1cb11b5838c4c70345\",\r\n    \"targetIdentifier\":\"6266bf1cb11b5838c4c70346\",\r\n    \"type\": true,\r\n    \"currency\":\"SOLES\",\r\n    \"cvc\": 792,\r\n    \"commission\" : 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8072/movement",
+					"host": [
+						"localhost"
+					],
+					"port": "8072",
+					"path": [
+						"movement"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

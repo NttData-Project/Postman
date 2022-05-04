@@ -26,11 +26,11 @@
 		{
 			"name": "save",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"accountType\": \"AHORRO\",\r\n    \"balance\": 200,\r\n    \"currency\": \"SOLES\",\r\n    \"accountNumber\": \"1234123412342123\",\r\n    \"cvc\": 213,\r\n    \"dni\": \"73938616\",\r\n    \"cardType\": \"DEBITO\"\r\n}",
+					"raw": "{\r\n    \"balance\": 20000,\r\n    \"currency\": \"SOLES\",\r\n    \"accountNumber\": \"1234123412342123\",\r\n    \"cvc\": 213,\r\n    \"dni\": \"73938616\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -38,14 +38,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8022/card",
+					"raw": "http://localhost:8022/fixedTermAccount/6256fb6d07e2ad6741efeb63",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8022",
 					"path": [
-						"card"
+						"fixedTermAccount",
+						"6256fb6d07e2ad6741efeb63"
 					]
 				}
 			},
